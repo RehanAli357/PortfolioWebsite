@@ -14,6 +14,7 @@ const App = () => {
         <Route exact path="/skills" element={<Skills/>}/>
         <Route exact path="/projects" element={<Projetcs/>}/>
         <Route exact path="contact" element={<Contact/>}/>
+        <Route exact path="*" element={ <Home/>}/>
       </Routes>
       
     </React.Fragment>
