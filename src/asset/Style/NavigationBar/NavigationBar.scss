@@ -1,0 +1,103 @@
+$black:#011936FF;
+$red:#ED254EFF;
+$yellow:#F9DC5CFF;
+$white:#F4FFFDFF;
+nav{
+    width: 100%;
+    background-color:$black ;
+    padding: 2em 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: navigation 1s 1;
+    .logo{
+        color: $red;
+        margin-left: 10em;
+        h1{
+            font-size: 3rem;
+        }
+    }
+    .Menu{
+        background-color: $yellow;
+        margin-right: 10em;
+        border-radius: 10em;
+        img{
+            width: 50em;
+            filter: invert(0);
+        }
+        transition: 0.2s;
+        &:hover{
+            background-color: $white;
+            cursor: pointer;
+            border-radius: 100%;
+            img{
+                filter: invert(1);
+            }
+            transition: 0.2s;
+        }
+    }
+}
+
+@keyframes navigation {
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}
+
+.sidebar {
+    padding: 2em 5em;
+    width: fit-content;
+    height: 90vh;
+    background-color: $black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-right: 3em solid $white;
+    position: absolute;
+    z-index: 100;
+    top: 1;
+    .sidebarBtn {
+        border: 0.2em solid $white;
+        border-radius: 10em;
+        position: relative;
+
+        &:hover{
+            cursor: pointer;
+            h1{
+                color: $black;
+            }
+        }
+        &:hover::after{
+            background-color: #ED254EFF;
+        }
+        &::after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: transparent;
+            top:0;
+            left: 0;
+            border-radius: 10em;
+            z-index: -1;
+        }
+        h1 {
+            position: relative;
+            color: $red;
+            font-size: 3rem;
+            padding: 0.5em;
+        }
+        a{
+            text-decoration: none;
+        }
+        a.active{
+            text-decoration: underline $yellow;
+        }
+    }
+}
+
+

@@ -1,0 +1,337 @@
+.DisplayScreen {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: relative;
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-animation: displeft 1.5s 1;
+          animation: displeft 1.5s 1;
+}
+.DisplayScreen .Image {
+  width: 40%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DisplayScreen .Image .ImageDisp {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.DisplayScreen .Image .ImageDisp img {
+  width: 100%;
+  height: 100%;
+}
+.DisplayScreen .Image :nth-child(3) {
+  display: none;
+}
+.DisplayScreen .Image :nth-child(3) {
+  display: none;
+}
+.DisplayScreen .Image img {
+  width: 300em;
+  box-shadow: 0em 0em 0em;
+}
+.DisplayScreen .Image .Vect {
+  position: absolute;
+}
+.DisplayScreen .Image .Vect img {
+  box-shadow: none;
+}
+.DisplayScreen .Image .Vect :nth-child(1) {
+  width: 200em;
+  top: -350em;
+  left: 20em;
+  height: 200em;
+  position: absolute;
+  display: block;
+}
+.DisplayScreen .Image .Vect :nth-child(2) {
+  width: 200em;
+  top: 130em;
+  left: 0;
+  position: absolute;
+  display: block;
+  height: 200em;
+}
+.DisplayScreen .Image .Vect :nth-child(3) {
+  height: 200em;
+  width: 200em;
+  top: -90em;
+  left: -350em;
+  position: absolute;
+  display: block;
+}
+.DisplayScreen .Disp2 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DisplayScreen .Disp2 .Content {
+  -webkit-animation: circle 5s infinite linear;
+          animation: circle 5s infinite linear;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #011936;
+  box-shadow: 10em 10em 10em black;
+  height: 100%;
+}
+.DisplayScreen .Disp2 .Content .Hi {
+  margin-bottom: 2%;
+}
+.DisplayScreen .Disp2 .Content .Hi h1 {
+  font-size: 7rem;
+  color: #ed254e;
+  font-weight: bolder;
+}
+.DisplayScreen .Disp2 .Content .Name {
+  margin-bottom: 2%;
+}
+.DisplayScreen .Disp2 .Content .Name h1 {
+  font-size: 6rem;
+  color: #f9dc5c;
+}
+.DisplayScreen .Disp2 .Content .Change {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DisplayScreen .Disp2 .Content .Change h1 {
+  font-size: 6rem;
+  color: #f4fffd;
+}
+.DisplayScreen .Disp2 .Content .Change .ChangeBtn {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DisplayScreen .Disp2 .Content .Change .ChangeBtn button {
+  position: relative;
+  margin: 0 2%;
+  color: #011936;
+  font-size: 3rem;
+  padding: 0.1em 1em;
+  border-radius: 20em;
+  background-color: #f4fffd;
+  transition: 0.5s;
+  box-shadow: 0.1em 0.1em 0em white;
+  cursor: pointer;
+}
+.DisplayScreen .Disp2 .Content .Change .ChangeBtn button:hover {
+  background-color: #011936;
+  color: #f4fffd;
+  border: #011936 solid 0.01em;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes displeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes displeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes circle {
+  0% {
+    border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  }
+  25% {
+    border-radius: 33% 67% 86% 14%/67% 26% 74% 33%;
+  }
+  50% {
+    border-radius: 66% 34% 86% 14%/48% 67% 33% 52%;
+  }
+  75% {
+    border-radius: 73% 27% 31% 69%/31% 68% 32% 69%;
+  }
+  90% {
+    border-radius: 30% 70% 57% 43%/67% 48% 52% 33%;
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  }
+}
+@keyframes circle {
+  0% {
+    border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  }
+  25% {
+    border-radius: 33% 67% 86% 14%/67% 26% 74% 33%;
+  }
+  50% {
+    border-radius: 66% 34% 86% 14%/48% 67% 33% 52%;
+  }
+  75% {
+    border-radius: 73% 27% 31% 69%/31% 68% 32% 69%;
+  }
+  90% {
+    border-radius: 30% 70% 57% 43%/67% 48% 52% 33%;
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .DisplayScreen .Disp2 .Content .Hi h1 {
+    font-size: 5rem;
+  }
+  .DisplayScreen .Disp2 .Content .Name h1 {
+    font-size: 4rem;
+  }
+  .DisplayScreen .Disp2 .Content .Change h1 {
+    font-size: 4rem;
+  }
+  .DisplayScreen .Disp2 .Content .Change .ChangeBtn button {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .DisplayScreen .Image {
+    width: 40%;
+  }
+  .DisplayScreen .Image img {
+    width: 250em;
+  }
+  .DisplayScreen .Image .Vect img:nth-child(1) {
+    width: 150em;
+    height: 150em;
+    top: -250em;
+  }
+  .DisplayScreen .Image .Vect img:nth-child(2) {
+    width: 150em;
+    height: 150em;
+  }
+  .DisplayScreen .Image .Vect img:nth-child(3) {
+    width: 150em;
+    height: 150em;
+    left: -300em;
+  }
+  .DisplayScreen .Disp2 {
+    width: 60%;
+  }
+  .DisplayScreen .Disp2 .Content {
+    width: 100%;
+    height: 80%;
+  }
+  .DisplayScreen .Disp2 .Content .Hi h1 {
+    font-size: 4rem;
+  }
+  .DisplayScreen .Disp2 .Content .Name {
+    width: 100%;
+  }
+  .DisplayScreen .Disp2 .Content .Name h1 {
+    text-align: center;
+    font-size: 3.6rem;
+  }
+  .DisplayScreen .Disp2 .Content .Change h1 {
+    font-size: 4rem;
+  }
+  .DisplayScreen .Disp2 .Content .Change .ChangeBtn button {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 426px) {
+  .DisplayScreen {
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    -webkit-animation: dispslide 2s 1;
+            animation: dispslide 2s 1;
+  }
+  .DisplayScreen .Disp2 {
+    width: 90%;
+  }
+  .DisplayScreen .Disp2 .Content {
+    height: 100%;
+    width: 100%;
+    padding: 10em;
+  }
+  .DisplayScreen .Disp2 .Content .Hi h1 {
+    font-size: 4rem;
+  }
+  .DisplayScreen .Disp2 .Content .Name h1 {
+    font-size: 3rem;
+  }
+  .DisplayScreen .Disp2 .Content .Change h1 {
+    font-size: 3.5rem;
+  }
+  .DisplayScreen .Disp2 .Content .Change .ChangeBtn {
+    flex-direction: column;
+  }
+  .DisplayScreen .Disp2 .Content .Change .ChangeBtn button {
+    margin: 2% 0;
+    font-size: 2rem;
+  }
+  .DisplayScreen .Image {
+    margin-top: 0%;
+    width: 90%;
+  }
+  .DisplayScreen .Image .Vect :nth-child(1) {
+    top: -300em;
+  }
+  .DisplayScreen .Image .Vect :nth-child(3) {
+    left: -300em;
+  }
+}
+@-webkit-keyframes dispslide {
+  0% {
+    transform: translateY(-140%);
+    display: none;
+  }
+  100% {
+    display: block;
+    transform: translateY(0%);
+  }
+}
+@keyframes dispslide {
+  0% {
+    transform: translateY(-140%);
+    display: none;
+  }
+  100% {
+    display: block;
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 321px) {
+  .DisplayScreen .Disp2 .Content .Hi h1 {
+    font-size: 3.5rem;
+  }
+  .DisplayScreen .Disp2 .Content .Name h1 {
+    font-size: 3rem;
+  }
+  .DisplayScreen .Disp2 .Content .Change .ChangeBtn {
+    flex-direction: column;
+  }
+  .DisplayScreen .Disp2 .Content .Change .ChangeBtn button {
+    margin: 2% 0;
+    font-size: 2.5rem;
+  }
+}/*# sourceMappingURL=home.css.map */

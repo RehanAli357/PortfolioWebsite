@@ -1,0 +1,119 @@
+$black:#011936FF;
+$red:#ED254EFF;
+$yellow:#F9DC5CFF;
+$white:#F4FFFDFF;
+
+.Projetcs{
+    width: 90%;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $yellow;
+    animation: proanim 1s 1;
+    .Heading{
+        width: 100%;
+        height: fit-content;
+        h1{
+            text-align: center;
+            margin-top: 1%;
+            font-size: 4rem;
+            color: $black;
+        }
+    }
+    .ProjectContent{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .Card{
+            margin: 2% 4%;
+            width: 300em;
+            height: 400em;
+            background-color: $white;
+            transition: 0.3s ease-in;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &:hover{
+                box-shadow: 10em 10em 0em $red;
+                transition: 0.3s ease-out;
+                transform: scale(1.1)
+            }
+            .CardImg{
+                position: relative;
+                width:100%;
+                height: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                &:hover{
+                    .CardInfo{
+                        transform: translate(0%);
+                        position: absolute;
+                        z-index: 1;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.5s;
+                    }
+                }
+                
+                .CardInfo{
+                    transform: translateY(100%);
+                    background-color: rgba(0, 12, 26, 0.634);
+                    transition: 1s;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a{
+                        font-size: 2rem;
+                        color: $white;
+                        text-decoration: none;
+                        border: 0.2em solid $white;
+                        padding: 0.3em 2em;
+                        border-radius: 20em;
+                        transition: 0.3s;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        &:hover{
+                            background-color: $black;
+                        }
+                    }
+                }
+            }
+            .CardData{
+                width: 100%;
+                height: 50%;
+                background-color:$black;
+                b{
+                    font-size: 2rem;
+                    color: $white;
+                    
+                }
+                p{
+                    text-align: justify;
+                    padding: 0.2em 0.3em;
+                    font-size: 1.7rem;
+                    color: $red;
+                }
+            }
+        }
+    }
+}
+
+@keyframes proanim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

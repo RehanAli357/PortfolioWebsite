@@ -1,0 +1,122 @@
+.Projetcs {
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f9dc5c;
+  -webkit-animation: proanim 1s 1;
+          animation: proanim 1s 1;
+}
+.Projetcs .Heading {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.Projetcs .Heading h1 {
+  text-align: center;
+  margin-top: 1%;
+  font-size: 4rem;
+  color: #011936;
+}
+.Projetcs .ProjectContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.Projetcs .ProjectContent .Card {
+  margin: 2% 4%;
+  width: 300em;
+  height: 400em;
+  background-color: #f4fffd;
+  transition: 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Projetcs .ProjectContent .Card:hover {
+  box-shadow: 10em 10em 0em #ed254e;
+  transition: 0.3s ease-out;
+  transform: scale(1.1);
+}
+.Projetcs .ProjectContent .Card .CardImg {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.Projetcs .ProjectContent .Card .CardImg img {
+  width: 100%;
+  height: 100%;
+}
+.Projetcs .ProjectContent .Card .CardImg:hover .CardInfo {
+  transform: translate(0%);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.Projetcs .ProjectContent .Card .CardImg .CardInfo {
+  transform: translateY(100%);
+  background-color: rgba(0, 12, 26, 0.634);
+  transition: 1s;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Projetcs .ProjectContent .Card .CardImg .CardInfo a {
+  font-size: 2rem;
+  color: #f4fffd;
+  text-decoration: none;
+  border: 0.2em solid #f4fffd;
+  padding: 0.3em 2em;
+  border-radius: 20em;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Projetcs .ProjectContent .Card .CardImg .CardInfo a:hover {
+  background-color: #011936;
+}
+.Projetcs .ProjectContent .Card .CardData {
+  width: 100%;
+  height: 50%;
+  background-color: #011936;
+}
+.Projetcs .ProjectContent .Card .CardData b {
+  font-size: 2rem;
+  color: #f4fffd;
+}
+.Projetcs .ProjectContent .Card .CardData p {
+  text-align: justify;
+  padding: 0.2em 0.3em;
+  font-size: 1.7rem;
+  color: #ed254e;
+}
+
+@-webkit-keyframes proanim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes proanim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=Projetcs.css.map */

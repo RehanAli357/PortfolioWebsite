@@ -1,0 +1,395 @@
+$black:#011936FF;
+$red:#ED254EFF;
+$yellow:#F9DC5CFF;
+$white:#F4FFFDFF;
+.DisplayScreen {
+    //background-color: rgb(255, 188, 188);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: displeft 1.5s 1;
+    
+    .Image {
+        width: 40%;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ImageDisp {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        :nth-child(3) {
+            display: none;
+           
+        }
+
+        :nth-child(3) {
+            display: none;
+        }
+
+        img {
+            width: 300em;
+            
+            box-shadow: 0em 0em 0em;
+        }
+
+        .Vect {
+            position: absolute;
+
+            img {
+                box-shadow: none;
+            }
+
+            :nth-child(1) {
+                width: 200em;
+                top: -350em;
+                left: 20em;
+                height: 200em;
+                position: absolute;
+                display: block;
+            }
+
+            :nth-child(2) {
+                width: 200em;
+                top: 130em;
+                left: 0;
+                position: absolute;
+                display: block;
+                height: 200em;
+            }
+
+            :nth-child(3) {
+                
+                height: 200em;
+                width: 200em;
+                top: -90em;
+                left: -350em;
+                position: absolute;
+                display: block;
+            }
+        }
+    }
+
+    .Disp2 {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Content {
+            animation: circle 5s infinite linear;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: $black;
+            box-shadow: 10em 10em 10em black;
+            height: 100%;
+
+            .Hi {
+                margin-bottom: 2%;
+
+                h1 {
+                    font-size: 7rem;
+
+                    color:$red;
+                    font-weight: bolder;
+                }
+            }
+
+            .Name {
+                margin-bottom: 2%;
+
+                h1 {
+                    font-size: 6rem;
+                    color: $yellow;
+
+                }
+            }
+
+            .Change {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1 {
+                    font-size: 6rem;
+                    color: $white;
+
+                }
+
+                .ChangeBtn {
+                    margin-top: 2%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    button {
+                        position: relative;
+                        margin: 0 2%;
+                        color: $black;
+                        font-size: 3rem;
+                        padding: 0.1em 1em;
+                        border-radius: 20em;
+                        background-color: $white;
+                        transition: 0.5s;
+                        box-shadow: 0.1em 0.1em 0em white;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: $black;
+                            color: $white;
+                            border: $black solid 0.01em;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes displeft {
+    0%{
+        transform: translateX(-100%);
+    }    
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes circle {
+    0% {
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    }
+
+    25% {
+        border-radius: 33% 67% 86% 14% / 67% 26% 74% 33%;
+    }
+
+    50% {
+        border-radius: 66% 34% 86% 14% /48% 67% 33% 52%;
+    }
+
+    75% {
+        border-radius: 73% 27% 31% 69% / 31% 68% 32% 69%;
+    }
+
+    90% {
+        border-radius: 30% 70% 57% 43% / 67% 48% 52% 33%;
+    }
+
+    100% {
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    }
+}
+@media (max-width:1024px) {
+    .DisplayScreen{
+        .Disp2{
+            .Content{
+                .Hi{
+                    h1{
+                        font-size: 5rem;
+                    }
+                }
+                .Name{
+                    h1{
+                        font-size: 4rem;
+                    }
+                }
+                .Change{
+                    h1{
+                        font-size: 4rem;
+                    }
+                    .ChangeBtn{
+                        button{
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    .DisplayScreen {
+
+        .Image {
+            width: 40%;
+
+            img {
+                width: 250em;
+            }
+            .Vect{
+                img{
+                    &:nth-child(1){
+                        width: 150em;
+                        height: 150em;
+                        top:-250em
+                    }
+                    &:nth-child(2){
+                        width: 150em;
+                        height: 150em;
+                        
+                    }
+                    &:nth-child(3){
+                        width: 150em;
+                        height: 150em;
+                        left: -300em;
+                    }
+                }
+            }
+        }
+
+        .Disp2{
+            width: 60%;
+            .Content {
+                width: 100%;
+                height: 80%;
+    
+                .Hi {
+                    h1 {
+                        font-size: 4rem;
+                    }
+                }
+    
+                .Name {
+                    width: 100%;
+    
+                    h1 {
+                        text-align: center;
+                        font-size: 3.6rem;
+                    }
+                }
+    
+                .Change {
+                    h1 {
+                        font-size: 4rem;
+                    }
+    
+                    .ChangeBtn {
+                        button {
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:426px) {
+    .DisplayScreen {
+        margin-top: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        animation: dispslide 2s 1;
+        .Disp2{
+            width: 90%;
+            .Content {
+                height: 100%;
+                width: 100%;
+                padding: 10em;
+                .Hi{
+                    h1{
+                        font-size: 4rem;
+                    }
+                }
+                .Name{
+                    h1{
+                        font-size: 3rem;
+                    }
+                }
+                .Change{
+                    h1{
+                        font-size: 3.5rem;
+                    }
+                    .ChangeBtn{
+                        flex-direction: column;
+                        button{
+                            margin: 2% 0;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Image {
+            margin-top: 0%;
+            width: 90%;
+
+            .Vect {
+                :nth-child(1) {
+                    top: -300em;
+                }
+
+                :nth-child(3) {
+                    left: -300em;
+                }
+            }
+
+        }
+        
+    }
+}
+
+@keyframes dispslide {
+    0%{
+        transform: translateY(-140%);
+        display: none;
+    }
+    100%{
+        display: block;
+        transform: translateY(0%);
+    }
+}
+@media (max-width:321px) {
+    .DisplayScreen {
+        .Disp2{
+            .Content{
+                .Hi{
+                    h1{
+                        font-size: 3.5rem;
+                    }
+                }
+                .Name{
+                    h1{
+                        font-size: 3rem;
+                    }
+                }
+                .Change{
+                    .ChangeBtn{
+                        flex-direction: column;
+                        button{
+                            margin: 2% 0;
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+

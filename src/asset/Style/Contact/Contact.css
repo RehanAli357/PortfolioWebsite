@@ -1,0 +1,247 @@
+.Contact {
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -webkit-animation: contanim 1.2s 1;
+          animation: contanim 1.2s 1;
+}
+.Contact .Heading {
+  width: 100%;
+  background-color: #011936;
+}
+.Contact .Heading h1 {
+  color: #f4fffd;
+  font-size: 4rem;
+  text-align: center;
+}
+.Contact .ContactOne {
+  width: 50%;
+  height: 100%;
+  background-color: #f9dc5c;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.Contact .ContactOne img {
+  width: 250em;
+}
+.Contact .ContactOne .LastWords {
+  width: 100%;
+}
+.Contact .ContactOne .LastWords p {
+  margin-left: 4%;
+  text-align: left;
+  width: 90%;
+  margin-top: 2%;
+  font-size: 4rem;
+  color: #ed254e;
+  font-weight: 800;
+}
+.Contact .ContactOne .SocialMediaHandling {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.Contact .ContactOne .SocialMediaHandling .SocialMedia {
+  width: 90%;
+  background-color: #ed254e;
+  border-radius: 30em;
+  display: flex;
+  padding: 1%;
+  justify-content: space-around;
+  box-shadow: 10em 10em 10em #011936;
+}
+.Contact .ContactOne .SocialMediaHandling .SocialMedia a {
+  text-decoration: none;
+}
+.Contact .ContactOne .SocialMediaHandling .SocialMedia a img {
+  filter: invert(1);
+  width: 150em;
+  border: 10em solid #f4fffd;
+  padding: 5%;
+  transition: 0.3s;
+}
+.Contact .ContactOne .SocialMediaHandling .SocialMedia a img:hover {
+  transition: 0.3s;
+  filter: invert(0);
+  border: none;
+  transform: scale(1.3);
+}
+.Contact .ContactTwo {
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #ed254e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Contact .ContactTwo .Form {
+  border: 10em solid #f4fffd;
+  border-radius: 20em;
+  width: 50%;
+  height: 70%;
+  background-color: #f9dc5c;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.Contact .ContactTwo .Form .Name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Contact .ContactTwo .Form .Name input {
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  padding: 0.1em 1em;
+  color: #ed254e;
+  background-color: #011936;
+}
+.Contact .ContactTwo .Form .Message {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.Contact .ContactTwo .Form .Message textarea {
+  width: 90%;
+  height: 100%;
+  font-size: 2rem;
+  padding: 0.5em 0.3em;
+  color: #ed254e;
+  outline: none;
+  border: none;
+  background-color: #011936;
+}
+.Contact .ContactTwo .Form .Submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Contact .ContactTwo .Form .Submit button {
+  font-size: 2rem;
+  border-radius: 20em;
+  padding: 0.2em 1em;
+  border: none;
+  background-color: #ed254e;
+  color: #f9dc5c;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Contact .ContactTwo .Form .Submit button:hover {
+  transition: 0.3s;
+  box-shadow: 0.4em 0.4em 1em #011936;
+}
+.Contact .ContactTwo .LastWord {
+  width: 100%;
+  position: absolute;
+  left: 90%;
+}
+.Contact .ContactTwo .LastWord h1 {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  font-size: 3rem;
+  color: #f9dc5c;
+}
+
+@-webkit-keyframes contanim {
+  0% {
+    transform: skewX(-20deg) scale(0.7);
+  }
+  100% {
+    transform: scaleX(0deg) scale(1);
+  }
+}
+
+@keyframes contanim {
+  0% {
+    transform: skewX(-20deg) scale(0.7);
+  }
+  100% {
+    transform: scaleX(0deg) scale(1);
+  }
+}
+@media (max-width: 1024px) {
+  .Contact .ContactTwo .Form .Name input {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .Contact .ContactOne .LastWords p {
+    font-size: 3rem;
+  }
+  .Contact .ContactTwo .Form {
+    width: 70%;
+  }
+  .Contact .ContactTwo .Form .Name input {
+    padding: 0.2em 0.3em;
+    font-size: 1.5rem;
+  }
+  .Contact .ContactTwo .Form .Message textarea {
+    font-size: 1.5rem;
+  }
+  .Contact .ContactTwo .LastWord h1 {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 426px) {
+  .Contact .ContactOne {
+    width: 100%;
+    height: 50%;
+  }
+  .Contact .ContactOne .LastWords p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Contact .ContactOne img {
+    width: 150em;
+  }
+  .Contact .ContactOne .SocialMediaHandling {
+    justify-content: space-around;
+    height: 80%;
+  }
+  .Contact .ContactOne .SocialMediaHandling .SocialMedia a img {
+    width: 120em;
+  }
+  .Contact .ContactTwo {
+    width: 100%;
+    height: 50%;
+  }
+  .Contact .ContactTwo img {
+    width: 65em;
+  }
+  .Contact .ContactTwo .Form {
+    width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    transform: translateY(-5em);
+  }
+  .Contact .ContactTwo .Form .Name {
+    margin: 1% 0;
+  }
+  .Contact .ContactTwo .Form .Name input {
+    width: 90%;
+  }
+  .Contact .ContactTwo .Form .Submit button {
+    margin: 1% 0;
+    font-size: 1.5rem;
+  }
+  .Contact .ContactTwo .LastWord h1 {
+    font-size: 1.7rem;
+    transform: translateX(0.5em);
+  }
+}/*# sourceMappingURL=Contact.css.map */
