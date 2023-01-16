@@ -15,7 +15,7 @@ const Skills = () => {
                             return (
                                 <React.Fragment>
                                     <div className="Data">
-                                        <h1>{data.skill}</h1>
+                                        <img src={data.skill} alt="images" />
                                     </div>
                                 </React.Fragment>
                             );

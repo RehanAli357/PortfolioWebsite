@@ -1,36 +1,47 @@
+import html from "../asset/Images/html.png";
+import css from "../asset/Images/css.png";
+import Js from "../asset/Images/js.png";
+import React from "../asset/Images/react.png";
+import figma from "../asset/Images/figma.png";
+import java from "../asset/Images/java.png";
+import c from "../asset/Images/c.png";
+import cpp from "../asset/Images/c++.png";
+import tailwind from "../asset/Images/tailwind.png";
+import firebase from "../asset/Images/firebase.png";
+import sass from "../asset/Images/sass.png";
 const SkillsData =[
     {
-        skill:"HTML"
+        skill:html
     },
     {
-        skill:"CSS"
+        skill:css
     },
     {
-        skill:"SCSS"
+        skill:sass
     },
     {
-        skill:"TailwindCss"
+        skill:tailwind
     },
     {
-        skill:"JavaScrpit"
+        skill:Js
     },
     {
-        skill:"ReactJs"
+        skill:React
     },
     {
-        skill:"Java"
+        skill:firebase
     },
     {
-        skill:"C++"
+        skill:java
     },
     {
-        skill:"C"
+        skill:cpp
     },
     {
-        skill:"MySql"
+        skill:c
     },
     {
-        skill:"Figma"
+        skill:figma
     }
 ]
 

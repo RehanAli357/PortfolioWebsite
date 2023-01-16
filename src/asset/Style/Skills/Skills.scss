@@ -4,7 +4,7 @@ $yellow:#F9DC5CFF;
 $white:#F4FFFDFF;
 .Skills{
     width: 90%;
-    height: 80vh;
+
     margin: auto;
     margin-top: 3%;
     display: flex;
@@ -29,25 +29,18 @@ $white:#F4FFFDFF;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+        
         .Data{
-            margin: 0 7%;
-            width: 50em;
-            height:50em;
+            width: 100em;
+            height:100em;
+            margin: 2% 8%;
             background-color: $white;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 100%;
-            transition: 0.3s;
-            &:hover{
-                width: 150em;
-                height: 150em;
-                background-color: $red;
-            }
-            h1{
-                font-size: 4rem;
-                text-align: center;
-                color: $yellow;
+            img{
+                width: 100%;
             }
         }
     }
@@ -61,25 +54,6 @@ $white:#F4FFFDFF;
     }
 }
 
-@media (max-width:1024px) {
-    .Skills{
-        .SkillsData{
-            .Data{
-                margin: 0 16%;
-            }
-        }
-    }
-}
-
-@media (max-width:768px) {
-    .Skills{
-        .SkillsData{
-            .Data{
-                margin: 0 15%;
-            }
-        }
-    }
-}
 
 @media (max-width:426px) {
     .Skills{
@@ -88,7 +62,7 @@ $white:#F4FFFDFF;
             justify-content: space-between;
             flex-wrap: wrap;
             .Data{
-                margin: 0 10%;
+                margin: 2% 1%;
                 &:hover{
                     width: 60em;
                     height: 60em;
